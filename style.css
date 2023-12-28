@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+header nav a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+/* General styling for all sections */
+#about,
+#education,
+#skills,
+#projects,
+#certificates,
+#contact {
+    padding: 50px 50px;
+}
+#about,
+#skills,
+#certificates {
+    background-color: rgb(200, 255, 237);
+}
+
+#projects,
+#education,
+#contact {
+    background-color: rgb(224, 224, 224);
+}
+
+/* About section STyling */
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+#my-pic {
+    height: 430px;
+}
+#my-pic img {
+    height: 400px;
+    transition: height 0.5s ease-in-out;
+}
+#my-pic img:hover {
+    height: 430px;
+}
+#my-bio {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#my-bio > div {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 5px;
+}
+
+/* education section styling */
+#education > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+#education > div > div {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 9px 9px 13px #949494, -9px -9px 13px #ffffff;
+}
+.school-img {
+    height: 100px;
+}
+.school-img img {
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+#education > div > div > div {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+#education > div > div > div h3 {
+    text-transform: uppercase;
+    color: rgb(0, 90, 90);
+}
